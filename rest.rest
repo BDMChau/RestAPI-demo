@@ -1,0 +1,34 @@
+#### Get all
+GET http://localhost:4000/restapi
+
+
+#### Get one
+GET http://localhost:4000/restapi/17
+
+
+#### Create one
+POST http://localhost:4000/restapi
+Content-Type: application/json
+
+{
+    "name": "Rest1",
+    "desc": "This is Rest1"
+}
+
+
+#### Update one
+PATCH http://localhost:4000/restapi/17
+Content-Type: application/json
+
+{
+    "name": "New name",
+    "desc": "Item updated!"
+}
+
+
+#### Remove all
+DELETE http://localhost:4000/restapi
+
+
+#### Remove one
+DELETE http://localhost:4000/restapi/17
